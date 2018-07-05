@@ -3,7 +3,7 @@ let http = require('http').Server(app)
 let port = 3000
 
 app.get('/', (req,res) => {
-  res.send('<h1>Hello World</h1>')
+  res.sendFile(__dirname + '/index.html')
 })
 
 http.listen(port, () => {
